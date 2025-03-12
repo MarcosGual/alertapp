@@ -1,0 +1,114 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "postgresql"
+    url = env("DATABASE_URL")
+}
+
+enum ROL {
+    ADMIN
+    GROUP_ADMIN
+    USER
+    GUEST
+}
+
+model Usuario {
+    id          String      @id @default(cuid())
+    uniqid      String      @unique
+    email       String
+    username    String
+    password    String
+    img         String      @default("https://www.gravatar.com/avatar/0000000000000000000000000?d=mp")
+    role        ROL[]       @default([USER])
+    isActive    Boolean     @default(true)
+    createdAt   DateTime    @default(now())
+    updatedAt   DateTime    @default(now())
+}
+
+model Vecino {
+    dni         Int      @unique
+    nombre      String
+    apellido    String
+    fecha_nac   DateTime
+    barrio_id   String   @unique
+    createdAt   DateTime @default(now())
+    updatedAt   DateTime @default(now())
+}
+
+model Familia {
+    id          Int     @id @default(autoincrement())
+    nombre      String
+    vecinos     Vecino[]
+    calle       String
+    numero      Int
+    barrioId
+    createdAt   DateTime @default(now())
+    updatedAt   DateTime @default(now())
+}
+
+model Barrio {
+    id          Int     @id @default(autoincrement())
+    nombre      String
+    ciudad      String
+    zona        String
+    provincia   Provincia @relation(fields: [provinciaId], references: [id])
+    provinciaId Int
+}
+
+model Provincia {
+    id          Int
+    nombre      String
+    pais        String
+}
+
+model Grupo {
+    id          String   @id @default(cuid())
+    nombre      String
+    Barrios     Barrio[]
+    createdAt   DateTime @default(now())
+    updatedAt   DateTime @default(now())
+}
+
+model Whatsapp {
+    id          String  @id @default(cuid())
+    link        String  @unique
+}
+
+model Mensaje {
+    id          Int     @id @default(autoincrement())
+    mensaje     String
+    alerta      Alerta  @relation(fields: [alertaId], references: [id])
+    alertaId    String
+    createdAt   DateTime @default(now())
+    updatedAt   DateTime @default(now())   
+}
+
+enum PRIORIDAD {
+    ALTA
+    MEDIA
+    BAJA
+    INFORMACION
+}
+
+model Alerta {
+    id          String  @id @default(cuid())
+    nivel       Nivel   @default(BAJO)
+    detalles    String  @default
+    esVisible   Boolean @default(true)
+    estaActiva  Boolean @default(true)
+    tablero     Tablero @relation(fields: [tableroId], references: [id])
+    tableroId   String           
+    createdAt   DateTime @default(now())
+    updatedAt   DateTime @default(now())
+}
+
+model Tablero {
+    id          String  @id @default(cuid())
+    grupo       Grupo   @relation(fields: [grupoId], references: [id])
+    grupoId     String       
+    alertas     Alerta[]
+    createdAt   DateTime @default(now())
+    updatedAt   DateTime @default(now())
+}
