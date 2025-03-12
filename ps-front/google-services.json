@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "429899531177",
+    "project_id": "alertapp-3ebda",
+    "storage_bucket": "alertapp-3ebda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:429899531177:android:4b5d161cd4b3004bbfbab8",
+        "android_client_info": {
+          "package_name": "com.terotero.alertApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwYwAsry2RiPnpeVOYOHtKXGjIcTYBOmY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

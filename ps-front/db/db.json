@@ -1,0 +1,159 @@
+{
+  "alerts": [
+    {
+      "id": 1,
+      "authorUid": "oGoUhVkvqAZTPh3X14a3nBsUoPe2",
+      "title": "Alerta 1",
+      "level": 2,
+      "description": "Me robaron en Marconi y Guido Spano",
+      "location": "",
+      "geolocation": "",
+      "time": "09:35:01 PM",
+      "date": "27-06-23",
+      "messages": [
+        {
+          "id": 1,
+          "content": "Buenas",
+          "author": "Marcos"
+        },
+        {
+          "id": 2,
+          "content": "Tardes",
+          "author": "Nico"
+        },
+        {
+          "id": 3,
+          "content": "Adiós",
+          "author": "Florencia"
+        },
+        {
+          "id": "df61b158-76b6-4054-a88d-178e1458453a",
+          "content": "Si los vi",
+          "author": "Marcos",
+          "time": "10:14:48 p. m.",
+          "date": "28/6/2023"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "authorUid": "",
+      "title": "Alerta 2",
+      "description": "Entradera en el garage de mi casa",
+      "location": "",
+      "geolocation": "",
+      "time": "01:08:55 PM",
+      "date": "26-06-23",
+      "level": 3,
+      "messages": [
+        {
+          "id": 4,
+          "content": "Saluditos",
+          "author": "Sasa"
+        },
+        {
+          "id": 5,
+          "content": "Buenas",
+          "author": "Marcos"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "authorUid": "",
+      "title": "Alerta 3",
+      "description": "Botón de emergencia disparado",
+      "location": "",
+      "geolocation": "",
+      "time": "11:51:43 PM",
+      "date": "26-06-23",
+      "level": 1,
+      "messages": []
+    },
+    {
+      "id": 4,
+      "authorUid": "oGoUhVkvqAZTPh3X14a3nBsUoPe2",
+      "title": "Alerta 4",
+      "description": "Nuevas alarmas disponibles",
+      "location": "",
+      "geolocation": "",
+      "time": "07:28:21 PM",
+      "date": "27-06-23",
+      "level": 4,
+      "messages": [
+        {
+          "id": "93da0880-195e-4294-96fd-e66da43b9120",
+          "content": "dsad",
+          "author": "Marcos",
+          "time": "11:31:54 PM",
+          "date": "6/28/2023"
+        }
+      ]
+    },
+    {
+      "id": "e72716ac-eb00-4972-9351-e05dd34d40ff",
+      "authorUid": "",
+      "title": "Alerta de Pánico",
+      "description": "Botón de emergencia disparado!",
+      "level": 1,
+      "location": "default",
+      "time": "08:44:28 PM",
+      "date": "25-06-23",
+      "messages": []
+    },
+    {
+      "authorUid": "oGoUhVkvqAZTPh3X14a3nBsUoPe2",
+      "title": "No andan las lucess",
+      "description": "No andan las luces del barrio",
+      "level": 3,
+      "location": "",
+      "geolocation": "",
+      "time": "01:12:53 PM",
+      "date": "25-06-23",
+      "messages": [
+        {
+          "id": "1b6e56c9-0081-4d33-af9a-a2185e0f5364",
+          "content": "en dónde es",
+          "author": "Marcos"
+        },
+        {
+          "id": "fc95a8f8-edaa-4414-b866-68bf4a22c54a",
+          "content": "acá en la esquina de marconi y guido spano!!",
+          "author": "Marcos"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "id": "4170c797-9f49-4f00-a452-ecd55a0c0e67",
+      "authorUid": "",
+      "title": "Alerta de Pánico",
+      "description": "Botón de emergencia disparado!",
+      "time": "11:56:25 PM",
+      "date": "28-06-23",
+      "level": 1,
+      "location": "default",
+      "messages": [
+        {
+          "id": "9e1654ba-1851-4ba0-a4d2-2b5dfed31cb4",
+          "content": "en dónde sucedió?",
+          "author": "Marcos",
+          "time": "11:57:17 PM",
+          "date": "28-06-23"
+        }
+      ]
+    },
+    {
+      "authorUid": "oGoUhVkvqAZTPh3X14a3nBsUoPe2",
+      "title": "Me robaron!!",
+      "description": "me asaltaron 3 personas",
+      "level": 2,
+      "location": "Marconi y Guido Spano",
+      "time": "11:56:25 PM",
+      "date": "28-06-23",
+      "geolocation": "Latitud: 37.4226711, Longitud: -122.0849872",
+      "messages": [],
+      "id": 6
+    }
+  ]
+}
