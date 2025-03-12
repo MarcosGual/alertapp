@@ -2,15 +2,15 @@
 
 ### Descripción
 
-AlertApp es una aplicación de alertas de seguridad desarrollada en React Native. Permite a los usuarios reportar incidentes de seguridad en tiempo real, visualizar alertas cercanas y responder a ellas, facilitando la comunicación en comunidades.
+AlertApp es una aplicación de alertas de seguridad desarrollada en React Native. Permite a los usuarios reportar incidentes de seguridad en tiempo real, visualizar alertas cercanas y responder a ellas, facilitando la comunicación en barrios y comunidades.
 
 ### Tecnologías Utilizadas
 
 #### Frontend
 
-- React Native: Desarrollo multiplataforma para Android e iOS.
+- React Native: Desarrollo móvil multiplataforma para Android e iOS.
 
-- Socket.io: Comunicación en tiempo real (si se usa un backend con Node.js y Express).
+- Socket.io: Comunicación en tiempo real.
 
 - Axios: Manejo de peticiones HTTP al backend.
 
@@ -40,7 +40,7 @@ AlertApp es una aplicación de alertas de seguridad desarrollada en React Native
 
     * Cloud Functions: Lógica de backend para automatizar ciertas acciones.
 
-Funcionalidades
+## Funcionalidades
 
 📍 Registro y autenticación de usuarios (Firebase Authentication)
 
@@ -54,32 +54,32 @@ Funcionalidades
 
 📅 Ordenamiento de alertas por fecha y nivel de importancia.
 
-Instalación y Configuración
+### Instalación y Configuración
 
-Requisitos previos
+#### Requisitos previos
 
-Tener instalado Node.js y npm.
+- Tener instalado Node.js y npm.
 
-Tener configurado el entorno de desarrollo de React Native.
+- Tener configurado el entorno de desarrollo de React Native.
 
-Tener una cuenta en Firebase y configurar Firestore y Authentication.
+- Tener una cuenta en Firebase y configurar Firestore y Authentication.
 
-Instalación
+#### Instalación
 
-#### Clonar el repositorio
+##### Clonar el repositorio
 git clone https://github.com/MarcosGual/alertapp.git
 cd alertapp
 
-#### Instalar dependencias de cada uno de los directorios (backend y frontend)
+##### Instalar dependencias de cada uno de los directorios (backend y frontend)
 npm install
 
-#### Configurar Firebase (crear y completar el archivo .env con las credenciales)
+##### Configurar Firebase (crear y completar el archivo .env con las credenciales)
 
 Ejecución
 
-#### Para ejecutar en Android
+##### Para ejecutar en Android
 expo start --android
 
-Licencia
+### Licencia
 
 Este proyecto está bajo la licencia MIT. ¡Siéntete libre de usar y mejorar AlertApp! 🚀
