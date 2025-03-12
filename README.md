@@ -89,4 +89,4 @@ AlertApp es una aplicación de alertas de seguridad desarrollada en React Native
 
 ### Licencia
 
-Este proyecto está bajo la licencia MIT. ¡Siéntete libre de usar y mejorar AlertApp! 🚀
+Este proyecto está bajo la licencia MIT.
