@@ -68,7 +68,8 @@ AlertApp es una aplicación de alertas de seguridad desarrollada en React Native
 
 1. Clonar el repositorio.
 
-`git clone https://github.com/MarcosGual/alertapp.git`
+`git clone https://github.com/MarcosGual/alertapp.git` 
+###
 `cd alertapp`
 
 2. Instalar dependencias de cada uno de los directorios (backend y frontend) con el comando:
