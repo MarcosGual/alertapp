@@ -8,9 +8,6 @@ AlertApp es una aplicación de alertas de seguridad desarrollada en React Native
 
 ```mermaid
 erDiagram
-    USERS ||--o{ NEIGHBORS : "has"
-    USERS ||--o{ ALERTS : "creates"
-    USERS ||--o{ MESSAGES : "writes"
     USERS {
         string id PK
         string name
@@ -19,14 +16,14 @@ erDiagram
         string phoneNumber
         string profilePicture
     }
-    NEIGHBORS }o--|| CITIES : "located in"
+
     NEIGHBORS {
         string id PK
         string userId FK
         string address
         string cityId FK
     }
-    ALERTS }o--|| GROUPS : "belongs to"
+
     ALERTS {
         string id PK
         string title
@@ -36,7 +33,7 @@ erDiagram
         string userId FK
         string groupId FK
     }
-    MESSAGES }o--|| ALERTS : "related to"
+
     MESSAGES {
         string id PK
         string alertId FK
@@ -50,13 +47,13 @@ erDiagram
         string name
         string description
     }
-    CITIES }o--|| PROVINCES : "belongs to"
+
     CITIES {
         string id PK
         string name
         string provinceId FK
     }
-    PROVINCES }o--|| COUNTRIES : "belongs to"
+
     PROVINCES {
         string id PK
         string name
@@ -67,6 +64,15 @@ erDiagram
         string id PK
         string name
     }
+
+    USERS ||--o{ NEIGHBORS : "has"
+    USERS ||--o{ ALERTS : "creates"
+    USERS ||--o{ MESSAGES : "writes"
+    NEIGHBORS }o--|| CITIES : "located in"
+    CITIES }o--|| PROVINCES : "belongs to"
+    PROVINCES }o--|| COUNTRIES : "belongs to"
+    ALERTS }o--|| GROUPS : "belongs to"
+    MESSAGES }o--|| ALERTS : "related to"
 ```
 
 ### Tecnologías Utilizadas
