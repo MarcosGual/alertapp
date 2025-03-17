@@ -6,6 +6,7 @@ AlertApp es una aplicación de alertas de seguridad desarrollada en React Native
 
 ## DER - Base de datos
 
+```mermaid
 erDiagram
     USERS {
         string id PK
@@ -72,7 +73,7 @@ erDiagram
     PROVINCES }o--|| COUNTRIES : "belongs to"
     ALERTS }o--|| GROUPS : "belongs to"
     MESSAGES }o--|| ALERTS : "related to"
-
+```
 
 ### Tecnologías Utilizadas
 
