@@ -4,6 +4,76 @@
 
 AlertApp es una aplicación de alertas de seguridad desarrollada en React Native. Permite a los usuarios reportar incidentes de seguridad en tiempo real, visualizar alertas cercanas y responder a ellas, facilitando la comunicación en barrios y comunidades.
 
+## DER - Base de datos
+
+erDiagram
+    USERS {
+        string id PK
+        string name
+        string email UNIQUE
+        string password
+        string phoneNumber
+        string profilePicture
+    }
+
+    NEIGHBORS {
+        string id PK
+        string userId FK
+        string address
+        string cityId FK
+    }
+
+    ALERTS {
+        string id PK
+        string title
+        string description
+        int level
+        datetime createdAt
+        string userId FK
+        string groupId FK
+    }
+
+    MESSAGES {
+        string id PK
+        string alertId FK
+        string userId FK
+        string content
+        datetime sentAt
+    }
+
+    GROUPS {
+        string id PK
+        string name
+        string description
+    }
+
+    CITIES {
+        string id PK
+        string name
+        string provinceId FK
+    }
+
+    PROVINCES {
+        string id PK
+        string name
+        string countryId FK
+    }
+
+    COUNTRIES {
+        string id PK
+        string name
+    }
+
+    USERS ||--o{ NEIGHBORS : "has"
+    USERS ||--o{ ALERTS : "creates"
+    USERS ||--o{ MESSAGES : "writes"
+    NEIGHBORS }o--|| CITIES : "located in"
+    CITIES }o--|| PROVINCES : "belongs to"
+    PROVINCES }o--|| COUNTRIES : "belongs to"
+    ALERTS }o--|| GROUPS : "belongs to"
+    MESSAGES }o--|| ALERTS : "related to"
+
+
 ### Tecnologías Utilizadas
 
 #### Frontend
