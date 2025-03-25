@@ -1,4 +1,4 @@
-## AlertApp: Seguridad Vecinal
+## AlertApp: Aplicación de Seguridad Vecinal
 
 ### Descripción
 
