@@ -10,7 +10,7 @@ AlertApp es una aplicación de alertas de seguridad desarrollada en React Native
 
 - React Native: Desarrollo móvil multiplataforma para Android e iOS.
 
-- Socket.io: Comunicación en tiempo real.
+- Socket.io: Comunicación en tiempo real, especial para notificaciones.
 
 - Axios: Manejo de peticiones HTTP al backend.
 
